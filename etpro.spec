@@ -1,5 +1,6 @@
 %define _ver	%(echo %{version} | tr . _)
 Summary:	Enemy Territory - ETpro
+Summary(pl):	Enemy Territory (Terytorium wroga) ETpro
 Name:		etpro
 Version:	3.1.0
 Release:	0.4
@@ -12,6 +13,7 @@ Source1:	%{name}.desktop
 URL:		http://bani.anime.net/etpro/
 Requires:	et
 Requires:	et-data
+ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		no_install_post_strip	1
@@ -20,12 +22,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_gamedatadir	%{_datadir}/games/et
 
 %description
-Enemy Territory - ETpro
+Enemy Territory - ETpro.
+
+%description -l pl
+Enemy Territory (Terytorium wroga) ETpro.
 
 %prep
 %setup -q -n %{name}
-
-%build
 
 %install
 rm -rf $RPM_BUILD_ROOT
