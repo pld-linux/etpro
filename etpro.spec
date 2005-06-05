@@ -11,6 +11,7 @@ Source0:	http://bani.anime.net/etpro/etpro-%{_ver}.zip
 # Source0-md5:	e2e47a25f92e4824a742832c2bca7c51
 Source1:	%{name}.desktop
 URL:		http://bani.anime.net/etpro/
+BuildRequires:	unzip
 Requires:	et
 Requires:	et-data
 ExclusiveArch:	%{ix86}
