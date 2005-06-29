@@ -2,13 +2,13 @@
 Summary:	Enemy Territory - ETpro
 Summary(pl):	Enemy Territory (Terytorium wroga) ETpro
 Name:		etpro
-Version:	3.1.0
-Release:	0.4
+Version:	3.2.0
+Release:	0.1
 Epoch:		0
 License:	as-is
 Group:		Applications/Games
 Source0:	http://bani.anime.net/etpro/etpro-%{_ver}.zip
-# Source0-md5:	e2e47a25f92e4824a742832c2bca7c51
+# Source0-md5:	7e72684c35bf00b4f92b7f40aa279ef6
 Source1:	%{name}.desktop
 URL:		http://bani.anime.net/etpro/
 BuildRequires:	unzip
