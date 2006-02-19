@@ -2,13 +2,12 @@
 Summary:	Enemy Territory - ETpro
 Summary(pl):	Enemy Territory (Terytorium wroga) ETpro
 Name:		etpro
-Version:	3.2.0
+Version:	3.2.4
 Release:	0.1
-Epoch:		0
 License:	as-is
 Group:		Applications/Games
 Source0:	http://bani.anime.net/etpro/etpro-%{_ver}.zip
-# Source0-md5:	7e72684c35bf00b4f92b7f40aa279ef6
+# Source0-md5:	a8248ff0b6c58d1f649f5e8ea85de1c2
 Source1:	%{name}.desktop
 URL:		http://bani.anime.net/etpro/
 BuildRequires:	unzip
@@ -35,12 +34,12 @@ Enemy Territory (Terytorium wroga) ETpro.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_desktopdir},{%{_gamelibdir},%{_gamedatadir}}/etpro}
 
-cat << EOF > $RPM_BUILD_ROOT%{_bindir}/%{name}
+cat << 'EOF' > $RPM_BUILD_ROOT%{_bindir}/%{name}
 #!/bin/sh
 # Needed to make symlinks/shortcuts work.
 # the binaries must run with correct working directory
 cd %{_gamelibdir}
-exec ./et +set fs_game etpro "\$@"
+exec ./et +set fs_game etpro "$@"
 EOF
 
 cp -a animations configs etpromapscripts maps $RPM_BUILD_ROOT%{_gamelibdir}/etpro
