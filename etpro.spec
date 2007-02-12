@@ -1,6 +1,6 @@
 %define _ver	%(echo %{version} | tr . _)
 Summary:	Enemy Territory - ETpro
-Summary(pl):	Enemy Territory (Terytorium wroga) ETpro
+Summary(pl.UTF-8):   Enemy Territory (Terytorium wroga) ETpro
 Name:		etpro
 Version:	3.2.4
 Release:	0.1
@@ -24,7 +24,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Enemy Territory - ETpro.
 
-%description -l pl
+%description -l pl.UTF-8
 Enemy Territory (Terytorium wroga) ETpro.
 
 %prep
