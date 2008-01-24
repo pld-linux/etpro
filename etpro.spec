@@ -16,9 +16,7 @@ Requires:	et-data
 ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		no_install_post_strip	1
-%define		no_install_post_chrpath 1
-%define		_gamelibdir	%{_libdir}/games/et
+%define		_gamelibdir		%{_libdir}/games/et
 %define		_gamedatadir	%{_datadir}/games/et
 
 %description
